@@ -2,11 +2,7 @@
 
 This project was created using Gulp
 
-You can watch it online:
-
-```bash
-git clone https://abdurashidov.github.io/social
-```
+You can watch it online: https://abdurashidov.github.io/social
 
 ## Installation
 
