@@ -1,0 +1,24 @@
+.shortcut {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.25rem 0.375rem;
+    color: $color-typo-base;
+    text-decoration: none;
+
+    &:focus {
+        outline: 0.125rem solid $color-bg-primary;
+    }
+
+    &__avatar {
+        width: 2.125rem;
+        height: 2.125rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__title {
+        margin-left: 0.375rem;
+        font-size: 0.8125rem;
+    }
+}
