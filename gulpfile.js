@@ -28,9 +28,9 @@ function images() {
        .pipe(gulp.dest('./dist/img'));
 }
 
-function fonts() {
-   return gulp.src('./src/assets/fonts/**/*')
-       .pipe(gulp.dest('dist/fonts'))
+function assets() {
+   return gulp.src(['./src/assets/**/*', '!./src/assets/pictures/**'])
+       .pipe(gulp.dest('dist/assets'))
 }
 
 function clean() {
@@ -50,8 +50,8 @@ function watch() {
 
 gulp.task('styles', styles);
 gulp.task('image', images);
-gulp.task('fonts', fonts);
+gulp.task('assets', assets);
 gulp.task('del', clean);
 gulp.task('watch', watch);
-gulp.task('build', gulp.series(clean, gulp.parallel(styles, images, fonts)));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles, images, assets)));
 gulp.task('dev', gulp.series('build', 'watch'));
