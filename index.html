@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Loretta Rhodes</title>
+    <title>News Feed</title>
     <link rel="apple-touch-icon" sizes="180x180" href="dist/assets/favicons/apple-touch-icon" />
     <link rel="icon" type="image/png" href="dist/assets/favicons/favicon-512x512.png" sizes="512x512" />
     <link rel="icon" type="image/png" href="dist/assets/favicons/favicon-196x196.png" sizes="196x196" />
@@ -19,33 +19,152 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__layout">
-            <button class="button button--icon">
-                <span class="icon">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                        <g transform="translate(-350 -489)">
-                            <path d="M166-49h18v-2H166v2Zm0-5h18v-2H166v2Zm0-7v2h18v-2Z" transform="translate(190 559)"/>
-                        </g>
-                    </svg>
-                </span>
-            </button>
-        </div>
-        <div class="header__layout">
-            <button class="button button--icon">
-                <span class="icon">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                        <g transform="translate(-550 -489)">
-                            <path d="M335-45.5a1.752,1.752,0,0,0,.4-.04,2.029,2.029,0,0,0,1.44-1.18,2.008,2.008,0,0,0,.15-.78h-4a2.015,2.015,0,0,0,2.01,2Zm6-11c0-3.07-1.64-5.64-4.5-6.32v-.68A1.5,1.5,0,0,0,335-65a1.5,1.5,0,0,0-1.5,1.5v.68c-2.87.68-4.5,3.24-4.5,6.32v5l-2,2v1h16v-1l-2-2v-5Z"
-                                  transform="translate(230 559)"/>
-                        </g>
-                    </svg>
-                </span>
-            </button>
-            <a class="shortcut header__shortcut" href="/profile.html">
-                <img class="shortcut__avatar" src="dist/img/profile.jpg" alt="Micheal Hogan">
-                <span class="shortcut__title">Loretta Rhodes</span>
-            </a>
+        <div class="header__container">
+            <div class="header__layout">
+                <button class="button button--icon">
+                    <span class="icon">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                            <g transform="translate(-350 -489)">
+                                <path d="M166-49h18v-2H166v2Zm0-5h18v-2H166v2Zm0-7v2h18v-2Z" transform="translate(190 559)"/>
+                            </g>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="header__layout">
+                <button class="button button--icon">
+                    <span class="icon">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                            <g transform="translate(-550 -489)">
+                                <path d="M335-45.5a1.752,1.752,0,0,0,.4-.04,2.029,2.029,0,0,0,1.44-1.18,2.008,2.008,0,0,0,.15-.78h-4a2.015,2.015,0,0,0,2.01,2Zm6-11c0-3.07-1.64-5.64-4.5-6.32v-.68A1.5,1.5,0,0,0,335-65a1.5,1.5,0,0,0-1.5,1.5v.68c-2.87.68-4.5,3.24-4.5,6.32v5l-2,2v1h16v-1l-2-2v-5Z"
+                                      transform="translate(230 559)"/>
+                            </g>
+                        </svg>
+                    </span>
+                </button>
+                <a class="shortcut header__shortcut" href="/profile.html">
+                    <img class="shortcut__avatar" src="dist/img/profile.jpg" alt="Micheal Hogan">
+                    <span class="shortcut__title">Loretta Rhodes</span>
+                </a>
+            </div>
         </div>
     </header>
+    <div class="layout">
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="/index.html" class="menu__link menu__link--active">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                <g transform="translate(-4248 -3746)">
+                                    <path d="M260-344H250a2,2,0,0,0-1.99,2L248-326l7-3,7,3v-16a2.006,2.006,0,0,0-2-2Z"
+                                          transform="translate(4008 4096)" fill="#d9d9d9" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="menu__title">News Feed</span>
+                        <span class="badge badge--border">10</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="/message.html" class="menu__link">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                <g transform="translate(-4448 -3846)">
+                                    <path d="M424.99-262a2,2,0,0,0-1.99-2H407a2.006,2.006,0,0,0-2,2v12a2.006,2.006,0,0,0,2,2h14l4,4-.01-18ZM421-252H409v-2h12v2Zm0-3H409v-2h12v2Zm0-3H409v-2h12v2Z"
+                                          transform="translate(4048 4115)" fill="#d9d9d9" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="menu__title">Message</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="/events.html" class="menu__link">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                <g transform="translate(-4298 -3796)">
+                                    <path d="M302-303h-1v-2h-2v2h-8v-2h-2v2h-1a1.991,1.991,0,0,0-1.99,2L286-287a2,2,0,0,0,2,2h14a2.006,2.006,0,0,0,2-2v-14a2.006,2.006,0,0,0-2-2Zm0,16H288v-11h14v11Zm-12-9h5v5h-5Z"
+                                          transform="translate(4018 4106)" fill="#d9d9d9" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="menu__title">Events</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="/friends.html" class="menu__link">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                <g transform="translate(-400 -539)">
+                                    <path d="M215-15a4,4,0,0,0,4-4,4,4,0,0,0-4-4,4,4,0,0,0-4,4,4,4,0,0,0,4,4Zm0,2c-2.67,0-8,1.34-8,4v2h16V-9c0-2.66-5.33-4-8-4Z"
+                                          transform="translate(200 569)" fill="#d9d9d9" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="menu__title">Friends</span>
+                        <span class="badge badge--border">+3</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="/groups.html" class="menu__link">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                <g transform="translate(-350 -539)">
+                                    <path d="M179-16a2.987,2.987,0,0,0,2.99-3A2.987,2.987,0,0,0,179-22a3,3,0,0,0-3,3,3,3,0,0,0,3,3Zm-8,0a2.987,2.987,0,0,0,2.99-3A2.987,2.987,0,0,0,171-22a3,3,0,0,0-3,3,3,3,0,0,0,3,3Zm0,2c-2.33,0-7,1.17-7,3.5V-8h14v-2.5c0-2.33-4.67-3.5-7-3.5Zm8,0c-.29,0-.62.02-.97.05A4.22,4.22,0,0,1,180-10.5V-8h6v-2.5c0-2.33-4.67-3.5-7-3.5Z"
+                                          transform="translate(190 569)" fill="#d9d9d9" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="menu__title">Groups</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="/photos.html" class="menu__link">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                <g transform="translate(-300 -389)">
+                                    <path d="M144-128v-14a2.006,2.006,0,0,0-2-2H128a2.006,2.006,0,0,0-2,2v14a2.006,2.006,0,0,0,2,2h14a2.006,2.006,0,0,0,2-2Zm-12.5-5.5,2.5,3.01,3.5-4.51,4.5,6H128l3.5-4.5Z"
+                                          transform="translate(180 539)" fill="#d9d9d9" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="menu__title">Photos</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="/music.html" class="menu__link">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                <g transform="translate(-4798 -3796)">
+                                    <path d="M695-304v9.28a4.389,4.389,0,0,0-1.5-.28,4.494,4.494,0,0,0-4.5,4.5,4.494,4.494,0,0,0,4.5,4.5,4.484,4.484,0,0,0,4.45-4H698v-11h4v-3Z"
+                                          transform="translate(4118 4106)" fill="#d9d9d9" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="menu__title">Music</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="/video.html" class="menu__link">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                <g transform="translate(-3948 -3846)">
+                                    <path d="M23-259H7v-2H23v2Zm-2-6H9v2H21v-2Zm4,10v8a2.006,2.006,0,0,1-2,2H7a2.006,2.006,0,0,1-2-2v-8a2.006,2.006,0,0,1,2-2H23a2.006,2.006,0,0,1,2,2Zm-6,4-6-3.27v6.53L19-251Z"
+                                          transform="translate(3948 4116)" fill="#d9d9d9" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="menu__title">Video</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <div class="main__layout"></div>
+            <div class="main__layout main__layout--content"></div>
+            <div class="main__layout"></div>
+        </main>
+    </div>
 </body>
 </html>
