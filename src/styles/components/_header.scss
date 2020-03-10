@@ -33,6 +33,15 @@
     &__shortcut {
         display: none;
         margin-left: 1rem;
+
+        & .shortcut__avatar {
+            width: 2.125rem;
+            height: 2.125rem;
+        }
+
+        & .shortcut__control-bar {
+            margin-left: 0.5rem;
+        }
     }
 
     @media screen and (min-width: 800px) {

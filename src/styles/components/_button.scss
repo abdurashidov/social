@@ -21,9 +21,12 @@
         fill: currentColor;
     }
 
+    & + .button {
+        margin-left: 1rem;
+    }
+
     &__title {
         display: inline-block;
         margin: 0 0.375rem;
-        font-size: 1rem;
     }
 }
