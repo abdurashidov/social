@@ -1,0 +1,11 @@
+.badge {
+    font-size: 0.75rem;
+    line-height: 1;
+    color: $color-typo-secondary;
+}
+
+.badge--border {
+    padding: 0.25rem 0.625rem;
+    border: 0.125rem solid #ebebeb;
+    border-radius: 1rem;
+}
